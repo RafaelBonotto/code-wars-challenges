@@ -1,21 +1,18 @@
-﻿//CODE WARS CHALLENGE - 'L1: Set Alarm' - RESOLVIDO
-
+﻿//CODE WARS CHALLENGE - 'Who likes it?'
 /*
-Escreva uma função chamada setAlarm que recebe dois parâmetros. 
-O primeiro parâmetro, Employees , é verdadeiro sempre que você está empregado e o segundo parâmetro, vacation , 
-é verdadeiro sempre que você está de férias.
-A função deve retornar true se você estiver empregado e não estiver de férias 
-(porque essas são as circunstâncias nas quais você precisa definir um alarme). 
-Caso contrário, deve retornar falso.
+Você provavelmente conhece o sistema de "curtir" do Facebook e outras páginas. 
+As pessoas podem "curtir" postagens de blog, fotos ou outros itens. Queremos criar o texto que deve ser exibido ao lado de tal item.
+Implemente a função que recebe um array contendo os nomes das pessoas que gostam de um item. 
+Ele deve retornar o texto de exibição conforme os exemplos:
 
-[Test]
-Assert.AreEqual(false, Kata.SetAlarm(true, true));
-Assert.AreEqual(false, Kata.SetAlarm(false, true));
-Assert.AreEqual(true, Kata.SetAlarm(true, false));
-Assert.AreEqual(false, Kata.SetAlarm(false, false));
- */
+[] --> "no one likes this"
+["Peter"]-- > "Peter likes this"
+["Jacob", "Alex"]-- > "Jacob and Alex like this"
+["Max", "John", "Mark"]-- > "Max, John and Mark like this"
+["Alex", "Jacob", "Mark", "Max"]-- > "Alex, Jacob and 2 others like this"
+*/
 
-
-static bool SetAlarm(bool employed, bool vacation)
-    => employed && !vacation;
-
+static string Likes(string[] name)
+{
+    throw new NotImplementedException();
+}
