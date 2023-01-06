@@ -9,7 +9,7 @@
  * Assert.AreEqual(true, Kata.IsPangram("The quick brown fox jumps over the lazy dog."));
 */
 
-var bolean = IsPangram("The quick brown fox jumps over the lazy dog.");
+var bolean = IsPangram2("The quick brown fox jumps over the lazy dog.");
 Console.WriteLine(bolean);
 
 static bool IsPangram(string str)
@@ -24,3 +24,6 @@ static bool IsPangram(string str)
 
     return !arr.Any();
 }
+
+static bool IsPangram2(string str)
+    => str.Where(ch => Char.IsLetter(ch)).Select(ch => Char.ToLower(ch)).Distinct().Count() == 26;
