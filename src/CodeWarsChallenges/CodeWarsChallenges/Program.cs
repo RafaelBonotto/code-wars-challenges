@@ -1,4 +1,4 @@
-﻿//CODE WARS CHALLENGE - 'Detect Pangram' 
+﻿//CODE WARS CHALLENGE - 'Detect Pangram' - RESOLVIDO
 /*
  * Um pangrama é uma frase que contém todas as letras do alfabeto pelo menos uma vez. 
  * Por exemplo, a frase "The quick brown fox jumps over the lazy dog." é um pangrama, 
@@ -9,7 +9,18 @@
  * Assert.AreEqual(true, Kata.IsPangram("The quick brown fox jumps over the lazy dog."));
 */
 
+var bolean = IsPangram("The quick brown fox jumps over the lazy dog.");
+Console.WriteLine(bolean);
+
 static bool IsPangram(string str)
 {
-    throw new NotImplementedException();
+    var alfab = "ABCDEFGHIJKLMNOPQRSTUVXWYZ";
+    var arr = alfab.ToCharArray().ToList();
+
+    foreach (var item in alfab)
+        foreach (var character in str)
+            if (character.ToString().ToUpper().Equals(item.ToString().ToUpper()))
+                arr.Remove(item);
+
+    return !arr.Any();
 }
