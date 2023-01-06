@@ -1,29 +1,22 @@
-﻿//CODE WARS CHALLENGE - 'Detect Pangram' - RESOLVIDO
+﻿//CODE WARS CHALLENGE - 'Persistent Bugger.'
 /*
- * Um pangrama é uma frase que contém todas as letras do alfabeto pelo menos uma vez. 
- * Por exemplo, a frase "The quick brown fox jumps over the lazy dog." é um pangrama, 
- * porque usa as letras AZ pelo menos uma vez (as letras maiúsculas e minúsculas são irrelevantes).
- * Dada uma string, detecte se é ou não um pangrama. Retorna True se for, False se não. Ignore números e pontuação.
- * 
- * [Test]
- * Assert.AreEqual(true, Kata.IsPangram("The quick brown fox jumps over the lazy dog."));
-*/
+ *Escreva uma função, persistence, que receba um parâmetro positivo nume retorne sua persistência multiplicativa, 
+ *que é o número de vezes que você deve multiplicar os dígitos numaté chegar a um único dígito.
+ *Por exemplo (Entrada --> Saída) :
+ *39 --> 3 (because 3*9 = 27, 2*7 = 14, 1*4 = 4 and 4 has only one digit)
+ *999 --> 4 (because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, and finally 1*2 = 2)
+ *4 --> 0 (because 4 is already a one-digit number) 
+ *
+ *[Test]
+ *Assert.AreEqual(3, Persist.Persistence(39));
+ *Assert.AreEqual(0, Persist.Persistence(4));
+ *Assert.AreEqual(2, Persist.Persistence(25));
+ *Assert.AreEqual(4, Persist.Persistence(999));
+ */
 
-var bolean = IsPangram2("The quick brown fox jumps over the lazy dog.");
-Console.WriteLine(bolean);
 
-static bool IsPangram(string str)
+static int Persistence(long n)
 {
-    var alfab = "ABCDEFGHIJKLMNOPQRSTUVXWYZ";
-    var arr = alfab.ToCharArray().ToList();
-
-    foreach (var item in alfab)
-        foreach (var character in str)
-            if (character.ToString().ToUpper().Equals(item.ToString().ToUpper()))
-                arr.Remove(item);
-
-    return !arr.Any();
+    // your code
+    return 0;
 }
-
-static bool IsPangram2(string str)
-    => str.Where(ch => Char.IsLetter(ch)).Select(ch => Char.ToLower(ch)).Distinct().Count() == 26;
