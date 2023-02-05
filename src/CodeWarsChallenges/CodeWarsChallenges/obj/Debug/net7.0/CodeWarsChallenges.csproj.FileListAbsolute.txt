@@ -1,0 +1,15 @@
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\bin\Debug\net7.0\CodeWarsChallenges.exe
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\bin\Debug\net7.0\CodeWarsChallenges.deps.json
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\bin\Debug\net7.0\CodeWarsChallenges.runtimeconfig.json
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\bin\Debug\net7.0\CodeWarsChallenges.dll
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\bin\Debug\net7.0\CodeWarsChallenges.pdb
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\obj\Debug\net7.0\CodeWarsChallenges.csproj.AssemblyReference.cache
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\obj\Debug\net7.0\CodeWarsChallenges.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\obj\Debug\net7.0\CodeWarsChallenges.AssemblyInfoInputs.cache
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\obj\Debug\net7.0\CodeWarsChallenges.AssemblyInfo.cs
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\obj\Debug\net7.0\CodeWarsChallenges.csproj.CoreCompileInputs.cache
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\obj\Debug\net7.0\CodeWarsChallenges.dll
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\obj\Debug\net7.0\refint\CodeWarsChallenges.dll
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\obj\Debug\net7.0\CodeWarsChallenges.pdb
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\obj\Debug\net7.0\CodeWarsChallenges.genruntimeconfig.cache
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\code-wars-challenges\src\CodeWarsChallenges\CodeWarsChallenges\obj\Debug\net7.0\ref\CodeWarsChallenges.dll
