@@ -18,24 +18,56 @@
  */
 
 
-static bool validBraces(String braces)
+Console.WriteLine(ValidBraces("[(])"));
+
+static bool ValidBraces(String braces)
 {
-    bool abriuParenteses;
-    bool abriuChaves;
-    bool abriuColchetes;
+    const string PARENTESES = "PARENTESES";
+    const string COLCHETE = "COLCHETE";
+    const string CHAVE= "CHAVE";
+    List<string> controle = new();
 
     foreach (var caracter in braces) 
     {
         if (caracter.Equals('('))
-            abriuParenteses = true;
+            controle.Add(PARENTESES);
 
         if (caracter.Equals('{'))
-            abriuChaves = true;
+            controle.Add(CHAVE);
 
         if (caracter.Equals('['))
-            abriuColchetes = true;
+            controle.Add(COLCHETE);
+
+        if (caracter.Equals(')'))
+        {
+            var parenteses = controle.FirstOrDefault(x => x.Equals(PARENTESES));
+            if(parenteses is not null)
+                controle.Remove(parenteses);
+        }
+        if (caracter.Equals(']'))
+        {
+            var colchete = controle.FirstOrDefault(x => x.Equals(COLCHETE));
+            if (colchete is not null)
+                controle.Remove(colchete);
+        }
+        if (caracter.Equals('}'))
+        {
+            var chave = controle.FirstOrDefault(x => x.Equals(CHAVE));
+            if (chave is not null)
+                controle.Remove(chave);
+        }
     }
-
-
-    return false;
+    return !controle.Any();
 }
+
+/*//bool abriuParenteses;
+    //bool abriuChaves;
+    //bool abriuColchetes;
+    //if (caracter.Equals('('))
+    //    abriuParenteses = true;
+
+    //if (caracter.Equals('{'))
+    //    abriuChaves = true;
+
+    //if (caracter.Equals('['))
+    //    abriuColchetes = true;*/
